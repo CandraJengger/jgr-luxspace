@@ -42,7 +42,8 @@
           <!-- START: menu humburger wrapper -->
           <div class="w-auto">
             <ul
-              class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex"
+              id="menu"
+              class="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100"
             >
               <li class="mx-3 py-6 md:py-0">
                 <a
@@ -81,7 +82,7 @@
               <li class="ml-6 block md:hidden">
                 <button
                   id="menu-toggler"
-                  class="relative flex z-50 items-center justify-center w-8 h-8 text-black hover:text-white focus:outline-none"
+                  class="relative flex z-50 items-center justify-center w-8 h-8 text-black focus:outline-none"
                 >
                   <svg
                     class="fill-current"
