@@ -114,6 +114,7 @@
               </li>
               <li class="ml-6">
                 <a
+                  id="header-chart"
                   href="cart.html"
                   class="
                     flex
@@ -176,8 +177,8 @@
     <section class="md:py-16">
       <div class="container mx-auto px-4">
         <div class="flex -mx-4 flex-wrap">
-          <!-- Start: shipping chart -->
-          <div class="w-full px-4 mb-4 md:w-8/12 md:mb-0">
+          <!-- Start: shopping chart -->
+          <div class="w-full px-4 mb-4 md:w-8/12 md:mb-0" id="shopping-cart">
             <div
               class="
                 flex flex-start
@@ -218,8 +219,18 @@
             </div>
             <!-- End: Table Title -->
 
+            <!-- START: Cart empty wrapper -->
+            <p id="cart-empty" class="hidden text-center py-8">
+              Ooops... Cart is empty
+              <a href="details.html" class="underline">Shop Now!</a>
+            </p>
+            <!-- End: Cart empty wrapper -->
+
             <!-- Start: Table Item 1 -->
-            <div class="flex flex-start flex-wrap items-center mb-4 -mx-4">
+            <div
+              class="flex flex-start flex-wrap items-center mb-4 -mx-4"
+              data-row="1"
+            >
               <div class="px-4 flex-none">
                 <div class="" style="width: 90px; height: 90px">
                   <img
@@ -260,6 +271,7 @@
               <div class="px-4 w-2/12">
                 <div class="text-center">
                   <button
+                    data-delete-item="1"
                     class="text-red-600 border-0 focus:outline-none px-3 py-1"
                   >
                     X
@@ -270,7 +282,10 @@
             <!-- End: Table Item 1 -->
 
             <!-- Start: Table Item 2 -->
-            <div class="flex flex-start flex-wrap items-center mb-4 -mx-4">
+            <div
+              class="flex flex-start flex-wrap items-center mb-4 -mx-4"
+              data-row="2"
+            >
               <div class="px-4 flex-none">
                 <div class="" style="width: 90px; height: 90px">
                   <img
@@ -311,6 +326,7 @@
               <div class="px-4 w-2/12">
                 <div class="text-center">
                   <button
+                    data-delete-item="2"
                     class="text-red-600 border-0 focus:outline-none px-3 py-1"
                   >
                     X
@@ -321,7 +337,10 @@
             <!-- End: Table Item 2 -->
 
             <!-- Start: Table Item 3 -->
-            <div class="flex flex-start flex-wrap items-center mb-4 -mx-4">
+            <div
+              class="flex flex-start flex-wrap items-center mb-4 -mx-4"
+              data-row="3"
+            >
               <div class="px-4 flex-none">
                 <div class="" style="width: 90px; height: 90px">
                   <img
@@ -362,6 +381,7 @@
               <div class="px-4 w-2/12">
                 <div class="text-center">
                   <button
+                    data-delete-item="3"
                     class="text-red-600 border-0 focus:outline-none px-3 py-1"
                   >
                     X
@@ -371,14 +391,14 @@
             </div>
             <!-- End: Table Item 3 -->
           </div>
-          <!-- End: shipping chart -->
+          <!-- End: shopping chart -->
 
-          <!-- Start: shipping details -->
+          <!-- Start: shopping details -->
           <div class="w-full md:px-4 md:w-4/12">
             <div class="bg-gray-100 px-4 py-6 md:p-8 md:rounded-3xl">
               <form action="success.html">
                 <div class="flex flex-start mb-6">
-                  <h3 class="text-2xl">Shipping Details</h3>
+                  <h3 class="text-2xl">Shopping Details</h3>
                 </div>
 
                 <!-- Start: Input complete-name -->
@@ -667,7 +687,7 @@
               </form>
             </div>
           </div>
-          <!-- End: shipping details -->
+          <!-- End: shopping details -->
         </div>
       </div>
     </section>
