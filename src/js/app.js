@@ -7,3 +7,4 @@ import './carousel';
 import './accordion';
 import './slider';
 import './shopping-chart';
+import './shipping-detail';
